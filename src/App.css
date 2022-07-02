@@ -1,0 +1,27 @@
+.App {
+  height: 100%;
+  text-align: center;
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: local("SF Pro Display"),
+    url(./assets//sf-pro-display-cufonfonts/FontsFree-Net-SFProDisplay-Regular.ttf)
+      format("truetype");
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: local("SF Pro Text"),
+    url(./assets//sf-pro-display-cufonfonts/FontsFree-Net-SFProText-Regular.ttf)
+      format("truetype");
+}

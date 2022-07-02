@@ -1,0 +1,86 @@
+.topbarWrapper {
+  width: 100%;
+  height: 206px;
+}
+
+.topbarContainer {
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.topbarBars {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: relative;
+}
+.topbarLeft {
+  margin-left: 163px;
+}
+.topbarRight {
+  margin-left: 210px;
+  padding: 13px 22px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topbarRightItemText {
+  color: white;
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "SF Pro Text";
+  line-height: 130%;
+  display: flex;
+  letter-spacing: 1px;
+  font-style: normal;
+}
+.topbarRightItem:not(:last-child) {
+  display: flex;
+  align-items: center;
+}
+.topbarRightResponsive {
+  width: 0;
+}
+.resRightBar {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(40px);
+}
+.show {
+  display: block;
+}
+.resRightBar .topbarRightItem {
+  padding: 10px;
+  width: 180px;
+}
+
+@media screen and (max-width: 1400px) {
+  .topbarRight {
+    display: none;
+  }
+  .topbarLeft {
+    margin-left: 0px;
+  }
+  .topbarBars {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .topbarContainer {
+    justify-content: center;
+  }
+}
